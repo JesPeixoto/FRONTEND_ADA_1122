@@ -1,0 +1,188 @@
+
+/*Arquivo CSS geral com estilos dos elementos de todas as páginas */
+/* Valor do ID é exclusivo */
+/* Setores HTML = * é universal, ID = é usado dentro da TG ou atributo ID que é unico #, seletor de classe que é iniciado por . */
+/* adcionar estilo por atributo */
+
+
+		/* Cuidade nesse elemento o seletor * universal, afeta todo o documento */
+* {
+			  box-sizing: border-box;
+
+			}
+			
+			/* Tag raiz de todo o HTML */
+			html {
+				margin: 0%;
+				padding: 0%;
+				font-family: 'Courier New', Courier, monospace; 
+				font-size: 10px; /*equivalente a 10px */
+			}
+
+			
+			/* elemento <body> no seu CSS para definir o fundo de toda a página. */
+
+			body {
+				color: rgb(255, 255, 255);
+				background-color: rgb(63, 98, 138);
+				font-family: 'Courier New', Courier, monospace;
+				letter-spacing: 1px;
+			  }
+
+			  header h1 {
+				color: rgb(255, 255, 255);
+				font-family: fantasy;
+				letter-spacing: 2px;
+				
+			  }
+		
+			/* Links da pagina */
+			a {
+				color: black;
+				text-decoration: none;
+				font-size: medium;
+				text-align: center;
+				font-family: 'Courier New', Courier, monospace;
+			}
+
+			a:hover {
+				color: #537499;
+				text-decoration:overline;
+			}
+			
+			ul { 	/* Rede sociais */
+				display: grid;
+				justify-content: space-around;
+				list-style-type: none;
+				align-items: center;
+				font-size: 10px;
+				padding: 5px;
+				}
+
+			ul li { 	/* Coluna com links */
+				display: grid;
+				justify-content: space-around;
+				list-style-type: none;
+				align-items: center;
+				font-size: 10px;
+				padding: 5px;
+			}
+
+			h3 {
+				letter-spacing: 2px;
+				font-family:'Courier New', Courier, monospace;
+				font-size: medium;
+				color: rgb(0, 0, 0);
+				font-weight:800;
+
+			}
+		
+			header img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				border: 4px solid rgb(255, 255, 255);
+
+			}
+
+			footer img {
+				width: 30px;
+				height: 30px;
+				border: 2px solid #ffffff;
+			}
+
+			footer {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				background-color:rgb(63, 98, 138);
+				height: 30px;
+			}
+
+			footer a {
+				margin: 20px;
+				text-align: center;
+		
+			}
+
+			footer p {
+				margin-top: 2px;
+				color: black;
+				
+			}
+
+			.container {
+				padding: 0px 30px;
+
+			}
+
+
+			.navegacao {
+				background-color: rgb(63, 98, 138);
+			}
+
+			[type="text", type="email", textare] {
+				margin-bottom: 35%;
+			}
+
+			form div {
+				background-color: #537499;
+				border: 1px rgb(157, 238, 252);
+				margin: 10px 10px 20px 10px;
+				padding: 10px 20px 10px 20px;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: rgb(63, 98, 138);
+			  padding: 15px;
+			  text-align: center;
+			  font-size: 15px;
+			  color: rgb(63, 98, 138);
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 15%;
+
+			  background: rgb(183, 205, 230);
+			  padding: 15px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type:armenian
+			  padding: 10;
+			}
+
+
+			/* home */
+
+			article {
+			  float: left;
+			  padding: 12px 20px;
+			  width: 70%;
+			  box-sizing: border-box;
+			  background-color: rgb(63, 98, 138);
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #fcfcfc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+		
+			
+			
